@@ -1,0 +1,47 @@
+def ters(gmetin):
+    print(gmetin[::-1])
+
+def bol(gmetin):
+    print(gmetin.split())
+
+def harfsayisi(gmetin):
+    harf=[]
+    sayi=[]
+    for i in gmetin:
+        if not(i in harf):
+            harf.append(i)
+            sayi.append(1)
+        else:
+            sayi[harf.index(i)]=sayi[harf.index(i)]+1
+    print("Harf: ")
+    for i in range(len(harf)):
+        print(harf[i], " -> ", sayi[i])
+    print("Toplam Harf Sayısı: ",len(sayi))
+
+def kendiicindeters(gmetin):
+    tersmetin=gmetin[::-1]
+    print((tersmetin.split()[::-1]))
+
+def harfsayisi(gmetin):
+    unluler=set(["a","e","ı","i","o","ö","u","ü"])
+    for i in range (len(gmetin)):
+        if gmetin(i)==unluler(i):
+            print("unluler: ",gmetin(i))
+        else:
+            print("unsuzler: ",gmetin(i))
+    print(unlusay)
+
+def unluunsuzayrimi(gmetin):
+    unluler=set(["a","e","ı","i","o","ö","u","ü"])
+    for i in range (len(gmetin)):
+        if gmetin(i)==unluler(i):
+            print("unluler: ",gmetin(i))
+        else:
+            print("unsuzler: ",gmetin(i))
+    print(unlusay)
+
+metin=input("Metin: ")
+ters(metin)
+bol(metin)
+harfsayisi(metin)
+kendiicindeters(metin)
