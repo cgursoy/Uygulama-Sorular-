@@ -1,0 +1,11 @@
+dosya=open("C:/Uygulama/221120181027_sonuc.txt", "w")
+sayi1=int(input("Sayı: "))
+sayi2=int(input("Sayı: "))
+sayi3=int(input("Sayı: "))
+sayi4=int(input("Sayı: "))
+sayi5=int(input("Sayı: "))
+liste=[sayi5,sayi4,sayi3,sayi2,sayi1]
+sirala=str(sorted(liste,reverse=True))
+sonuc=print(sorted(liste,reverse=True))
+dosya.write(sirala)
+dosya.close()
