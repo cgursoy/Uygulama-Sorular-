@@ -1,0 +1,20 @@
+# C dilinden python diline çevirmeye çalıştım. Çalışmıyor.
+
+basla=1
+
+kontrol=0
+sayi=0
+
+while kontrol!=0:
+    basla *= 10
+    for i in range (basla*10/6):
+        kontrol=1
+        for i in range(2,7):
+            if not (i,j*i):
+                kontrol = 0
+                break
+
+
+        if kontrol==1:
+            sayi = i
+            break
