@@ -1,0 +1,5 @@
+sonuc=0
+for i in range(1,1001):
+    sonuc+=i**i
+print(sonuc)
+print(sonuc%10000000000)
